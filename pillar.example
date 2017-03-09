@@ -1,0 +1,60 @@
+rbenv:
+  # These ruby options will be used unless an option has been overridden in
+  # the users dictionary below.
+  #
+  ruby:
+    global: ''
+    packages_install_options: ''
+    packages: []
+    versions:
+      - 2.3.3
+
+  # Name of the file to append the PATH information for rbenv. Defaults to
+  # .bash_profile for Debian and .profile for Ubuntu
+  #
+  # profile: .bash_profile
+
+  # A list of plugins to install.
+  #
+  # N.B., you need to include the ruby-build plugin else you won't be able to
+  # install ruby!
+  #
+  # plugins:
+  #   install: git://github.com:rbenv/ruby-build.git
+
+  # Location of the rbenv repository (you can overwrite it with a local clone)
+  #
+  # repository: git://github.com:rbenv/rbenv.git
+
+  # A dictionary of users that rbenv should be installed for.
+  #
+  # # Users will install with the default ruby: options
+  # users:
+  #   vagrant:
+  #     user: vagrant
+  #     group: vagrant
+  #
+  # # Override default :ruby options
+  # users:
+  #   vagrant:
+  #     user: vagrant
+  #     group: vagrant
+  #     ruby:
+  #       global: 2.3.3
+  #       packages_install_options:
+  #       packages:
+  #         - test-kitchen
+  #       versions:
+  #         - 2.3.3
+  users:
+    vagrant:
+      user: vagrant
+      group: vagrant
+      ruby:
+        global: 2.3.3
+        packages:
+          - test-kitchen
+        versions:
+          - 2.3.3
+
+# vim: ft=yaml:sw=2
