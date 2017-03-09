@@ -9,7 +9,7 @@ include:
 rbenv-install-bundler-{{ version }}-{{ name }}:
   cmd.run:
     - unless: {{ rbenv.bin }} which bundle
-    - name: {{ rbenv.bin }} exec gem bundler
+    - name: {{ rbenv.bin }} exec gem install bundler
     - runas: {{ args.user }}
     - env:
       - RBENV_VERSION: {{ version }}
