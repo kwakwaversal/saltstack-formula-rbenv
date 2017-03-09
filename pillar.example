@@ -20,11 +20,11 @@ rbenv:
   # install ruby!
   #
   # plugins:
-  #   install: git://github.com:rbenv/ruby-build.git
+  #   install: git://github.com/rbenv/ruby-build.git
 
   # Location of the rbenv repository (you can overwrite it with a local clone)
   #
-  # repository: git://github.com:rbenv/rbenv.git
+  # repository: git://github.com/rbenv/rbenv.git
 
   # A dictionary of users that rbenv should be installed for.
   #
